@@ -60,7 +60,7 @@ app.get('/api/classify-number', async (req, res) => {
     // Validate input
     const parsedNumber = parseInt(number);
     if (isNaN(parsedNumber) || !Number.isInteger(parsedNumber)) {
-        return res.status(400).json({ number: number, error: true });
+        return res.status(400).json({ number: "alphabet", error: true });
     }
 
     // Classify the number
