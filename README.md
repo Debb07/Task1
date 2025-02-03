@@ -25,25 +25,6 @@ This API classifies a number based on its mathematical properties and provides a
 - Axios
 - CORS
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/classify-number-api.git
-   cd classify-number-api
-   ```
-
-2. Install the dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the server:
-   ```bash
-   npm start
-   ```
-
-4. The server will run on `http://localhost:3000`.
 
 ## Usage
 
