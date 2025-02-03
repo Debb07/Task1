@@ -28,6 +28,7 @@ const isPerfect = (num) => {
 
 // Function to check if a number is an Armstrong number
 const isArmstrong = (num) => {
+    if (num < 0) return false; // Armstrong numbers are defined only for positive integers
     const digits = Math.abs(num).toString().split('');
     const sum = digits.reduce((acc, digit) => acc + Math.pow(Number(digit), digits.length), 0);
     return sum === Math.abs(num);
@@ -44,10 +45,10 @@ const digitSum = (num) => {
 
 // API endpoint to classify the number
 app.get('/api/classify-number', async (req, res) => {
-    const number = parseInt(req.query.number);
+    const number = parseFloat(req.query.number);
 
     // Check for valid integer input
-    if (isNaN(number)) {
+    if (isNaN(number) || !Number.isInteger(number)) {
         return res.status(400).json({
             number: "alphabet",
             error: true,
