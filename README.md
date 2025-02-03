@@ -6,7 +6,6 @@ This API classifies a number based on its mathematical properties and provides a
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Example Request](#example-request)
